@@ -1,0 +1,101 @@
+.navbar {
+  width: 100%;
+  position: absolute;
+  padding: 1rem 3rem;
+  z-index: 999;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-item {
+  color: white;
+  font-weight: 400;
+}
+
+.nav-item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-item a {
+	color: white;
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-item a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: white;
+  top: 110%;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+.nav-item a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+
+.fade-in-fwd {
+	-webkit-animation: fade-in-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+            transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+            transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+/* Mobile devices (portrait and landscape) */
+@media only screen and (max-width: 767px) {
+
+}
+
+/* Tablet devices (portrait and landscape) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+/* Laptop devices (portrait and landscape) */
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+
+}
+
+/* Desktop devices (portrait and landscape) */
+@media only screen and (min-width: 1441px) {
+
+}
+

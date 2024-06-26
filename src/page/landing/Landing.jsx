@@ -39,7 +39,7 @@ const Landing = () => {
         <div className="shaded-area">
         </div>
         <div className="about-wrapper">
-          
+          <p>My name is Jackie. I'm known for my resourcefulness, crafting creative products and debugging any problem that comes my way. With my touch, every interface becomes a ‘site’ for sore eyes, and every '404 Not Found' turns into '200 OK'.</p>
         </div>
       </section>
     </div>

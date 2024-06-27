@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
-import menu from '../../asset/ui/hamburger.png';
+import logo from '../../asset/branding/logo.png'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState();
@@ -26,6 +26,7 @@ const Navbar = () => {
         </button>
       </div>
       <ul className={`nav-menu ${isOpen === true ? 'active' : isOpen === false ? 'slide-out-right' : ''}`}>
+        <img className='logo mobile' src={logo} alt="" />
         <li className="nav-item">
           <Link to='/' onClick={toggleMenu}>Home</Link>
         </li>
@@ -38,6 +39,8 @@ const Navbar = () => {
         <li className="nav-item">
           <Link to='/contact' onClick={toggleMenu}>Contact</Link>
         </li>
+        <p className='mobile'>&copy; Designed and developed by Jackie Shen | All rights reserved</p>
+
       </ul>
     </nav>
   );

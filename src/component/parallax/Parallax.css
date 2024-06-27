@@ -1,0 +1,93 @@
+/* 
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  top: 0vh;
+  left: 50vw;
+  position: absolute;
+  color: white;
+}
+
+.fixed-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  top: 0rem;
+  left: 0;
+  width: 40vw;
+  gap: 2vh;
+  padding: 10px 20px; 
+}
+
+.fixed-header h1 {
+  font-weight: 200;
+  line-height: 100%;
+}
+
+.fixed-header h4 {
+  font-weight: 200;
+  width: 15vw;;
+  text-align: end;
+}
+
+
+.content-wrapper {
+  width: 80vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 5vh;
+}
+
+.content-wrapper h2 {
+  padding-top: 10vh;
+  width: 8vw;
+  font-weight: 200;
+  font-size: 1vw;
+}
+
+.content-wrapper h5 {
+  font-size: 1vw;
+  white-space: nowrap; 
+  font-weight: 200;
+}
+
+.content-wrapper .content {
+  display: flex;
+  padding-top: 10vh;
+  width: 60vw;
+}
+
+.horizontal-scroll {
+  padding: 0 5vw;
+  padding-top: 20vh;
+  white-space: nowrap; 
+  display: flex; 
+  align-items: flex-end; 
+  gap: 5vw;
+  position: relative;
+}
+
+.horizontal-scroll::before {
+  position: absolute;
+  content: "";
+  top: 100%;
+  width: 130vw;
+  height: 1px;
+  background-color: white;
+}
+
+.horizontal-scroll::after {
+  position: absolute;
+  content: "";
+  bottom: 2.75vw;
+  width: 130vw;
+  height: 1px;
+  background-color: white;
+}
+.element {
+  font-size: 1.75vw;
+  font-weight: 200;
+} */

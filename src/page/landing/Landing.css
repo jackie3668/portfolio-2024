@@ -6,7 +6,7 @@
 .hero-container {
   position: relative;
   width: 100%;
-  min-height: 800px;
+  min-height: 600px;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -52,7 +52,7 @@
 }
 
 .line-1 {
-  margin-top: 10vh;
+  margin-top: 8vh;
   margin-left: -10%;
   animation: fade-in-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   animation-delay: 0.5s;
@@ -139,6 +139,13 @@
   border-top-right-radius: 100px;
   background-color: black;
   box-shadow: 0 -15px 80px 40px rgba(0, 0, 0, 0.7);
+}
+/* Mobile devices (portrait and landscape) */
+@media only screen and (max-width: 767px) {
+  .shaded-area {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
 }
 
 .about-container {

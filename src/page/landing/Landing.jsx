@@ -5,6 +5,7 @@ import video from '../../asset/branding/9150545-hd_1920_1080_24fps.mp4';
 import logo from '../../asset/branding/logo.png';
 import About from '../../component/about/About';
 import { animateScroll as scroll } from 'react-scroll';
+import Projects from '../../component/projects/Projects';
 
 const Landing = () => {
   const heroContainerRef = useRef(null);
@@ -129,7 +130,7 @@ const Landing = () => {
         <About />
       </section>
       <section className="projects">
-
+        <Projects />
       </section>
     </div>
   );

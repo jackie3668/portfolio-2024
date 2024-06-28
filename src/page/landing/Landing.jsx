@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Parallax } from 'react-scroll-parallax';
 import './Landing.css';
 import video from '../../asset/branding/9150545-hd_1920_1080_24fps.mp4';
@@ -12,6 +12,7 @@ const Landing = () => {
   const aboutRef = useRef(null);
   let lastClickTime = useRef(0);
   const lastScrollPos = useRef(0);
+  const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     const handleClick = () => {
@@ -21,7 +22,6 @@ const Landing = () => {
 
       if (timeSinceLastClick > 500) { 
         const aboutOffsetTop = aboutRef.current.offsetTop;
-        console.log('Click detected. Scrolling to about section.');
         scroll.scrollTo(aboutOffsetTop, {
           duration: 300,
           smooth: true,
@@ -36,7 +36,6 @@ const Landing = () => {
     };
   }, []);
 
-
     useEffect(() => {
     const handleClick = () => {
       const currentTime = Date.now();
@@ -45,7 +44,6 @@ const Landing = () => {
 
       if (timeSinceLastClick > 500) { 
         const aboutOffsetTop = aboutRef.current.offsetTop;
-        console.log('Click detected. Scrolling to about section.');
         scroll.scrollTo(aboutOffsetTop, {
           duration: 200,
           smooth: true,
@@ -57,6 +55,18 @@ const Landing = () => {
 
     return () => {
       window.removeEventListener('click', handleClick);
+    };
+  }, []);
+
+  useEffect(() => {
+    const moveCursor = (e) => {;
+      setPosition({ x: e.clientX, y: e.clientY });
+    };
+
+    document.addEventListener('mousemove', moveCursor);
+
+    return () => {
+      document.removeEventListener('mousemove', moveCursor);
     };
   }, []);
 
@@ -118,7 +128,9 @@ const Landing = () => {
       <section ref={aboutRef} className='about-section'>
         <About />
       </section>
-      <div className="projects"></div>
+      <section className="projects">
+
+      </section>
     </div>
   );
 };

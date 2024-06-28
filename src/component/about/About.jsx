@@ -1,34 +1,32 @@
-// About.js
-
 import React from 'react';
-import './About.css'; // Import the CSS file for styling
+import './About.css'; 
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import image1 from '../../asset/images/pexels-adrien-olichon-1257089-2387533.jpg'
 import image2 from '../../asset/images/pexels-matej-117839-1158394.jpg'
-import image3 from '../../asset/images/pexels-rdne-9086767.jpg'
-import image4 from '../../asset/images/pexels-slendyalex-3648850.jpg'
+import image3 from '../../asset/images/pexels-slendyalex-3648850.jpg'
 
 const About = () => {
+
   return (
     <div className="about-container">
       <div>
         <Parallax pages={3}>
           <ParallaxLayer sticky={{ start: 0, end: 4 }}>
-            <div className="left">
+            <div className="left desktop">
               <h4>About Me.</h4>
               <h1>Every '404 Not Found' turns into '200 OK'.</h1>
             </div>
           </ParallaxLayer>
-          <ParallaxLayer offset={0.9} speed={0.6}>
+          <ParallaxLayer offset={1} speed={1.2}>
             <img className='img-1' src={image1} alt="" />
           </ParallaxLayer>
-          <ParallaxLayer offset={1.4} speed={0.6}>
+          <ParallaxLayer offset={1.8} speed={1.2}>
             <img className='img-2' src={image2} alt="" />
           </ParallaxLayer>
-          <ParallaxLayer offset={2.3} speed={0.6}>
-            <img className='img-1' src={image4} alt="" />
+          <ParallaxLayer offset={2} speed={1.2}>
+            <img className='img-3' src={image3} alt="" />
           </ParallaxLayer>
-          <ParallaxLayer offset={0.9} speed={1.3}>
+          <ParallaxLayer offset={1} speed={0.6}>
             <div className="right">
               <div className="header">
                 <h4>01/</h4>
@@ -41,11 +39,11 @@ const About = () => {
               </div>
             </div>
           </ParallaxLayer>
-          <ParallaxLayer offset={1.1} speed={1.3}>
+          <ParallaxLayer offset={1.8} speed={0.6}>
             <div className="right variation">
               <div className="header">
                 <h4>02/</h4>
-                <h1>Previous Employer</h1>
+                <h1>Previous Employers</h1>
               </div>
               <div className="wrapper">
                 <h3 className="element">United Nations Department of Economic and Social Affairs</h3>
@@ -55,7 +53,7 @@ const About = () => {
               </div>
             </div>
           </ParallaxLayer>
-          <ParallaxLayer offset={2} speed={1.3}>
+          <ParallaxLayer offset={2} speed={0.6}>
             <div className="right">
               <div className="header">
                 <h4>03/</h4>
@@ -78,9 +76,12 @@ const About = () => {
               </div>
             </div>
           </ParallaxLayer>
-  
-
-
+          <ParallaxLayer offset={0} speed={1.2}>
+            <div className="left mobile">
+              <h4>About Me.</h4>
+              <h1>Every '404 Not Found' turns into '200 OK'.</h1>
+            </div>
+          </ParallaxLayer>
         </Parallax>
       </div>
 

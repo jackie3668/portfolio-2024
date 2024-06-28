@@ -15,6 +15,7 @@ function App() {
       smooth: true
     })
   },[])
+
   return (
     <BrowserRouter basename="/portfolio-2024">
       <ParallaxProvider>
@@ -38,7 +39,18 @@ function App() {
               'select',
               'textarea',
               'button',
-              '.link'
+              '.link',
+              {
+                target: '.about-section',
+                options: {
+                  innerSize: 100,
+                  outerSize: 200,
+                  color: '255,255,255',
+                  outerAlpha: 0.7,
+                  innerScale: 0.1,
+                  outerScale: 2.5
+                }
+              }
             ]}
           />
           <Routes>

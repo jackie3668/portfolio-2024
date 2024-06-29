@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio-2024/static/css/main.8dbe76ee.css",
-    "main.js": "/portfolio-2024/static/js/main.a2e99cd5.js",
-    "static/media/test.mp4": "/portfolio-2024/static/media/test.c627613fa1f96553e2e2.mp4",
+    "main.css": "/portfolio-2024/static/css/main.ef6eeb1b.css",
+    "main.js": "/portfolio-2024/static/js/main.71537ece.js",
     "static/media/9150545-hd_1920_1080_24fps.mp4": "/portfolio-2024/static/media/9150545-hd_1920_1080_24fps.b674089417293949cb2b.mp4",
+    "static/media/test.mp4": "/portfolio-2024/static/media/test.c61aeaf8ad13ecaab71a.mp4",
     "static/media/pexels-adrien-olichon-1257089-2387533.jpg": "/portfolio-2024/static/media/pexels-adrien-olichon-1257089-2387533.96f8628cafd46ffcb1f8.jpg",
     "static/media/pexels-slendyalex-3648850.jpg": "/portfolio-2024/static/media/pexels-slendyalex-3648850.f32fe3b576e9c499297e.jpg",
     "static/media/pexels-matej-117839-1158394.jpg": "/portfolio-2024/static/media/pexels-matej-117839-1158394.8aead930ac3ba393c2e0.jpg",
     "static/media/logo.png": "/portfolio-2024/static/media/logo.6de8c6f882149a91638e.png",
     "index.html": "/portfolio-2024/index.html",
-    "main.8dbe76ee.css.map": "/portfolio-2024/static/css/main.8dbe76ee.css.map",
-    "main.a2e99cd5.js.map": "/portfolio-2024/static/js/main.a2e99cd5.js.map"
+    "main.ef6eeb1b.css.map": "/portfolio-2024/static/css/main.ef6eeb1b.css.map",
+    "main.71537ece.js.map": "/portfolio-2024/static/js/main.71537ece.js.map"
   },
   "entrypoints": [
-    "static/css/main.8dbe76ee.css",
-    "static/js/main.a2e99cd5.js"
+    "static/css/main.ef6eeb1b.css",
+    "static/js/main.71537ece.js"
   ]
 }

@@ -20,11 +20,16 @@
 
 .left h4 {
   font-weight: 200;
+  font-family: "Rasa", serif;
+  font-size: 2vw;
+  font-style: italic;
 }
 
 .left h1 {
+  max-width: 30vw;
   font-weight: 200; 
   letter-spacing: 0.1rem;
+  font-size: 3vw;
 }
 
 .right {
@@ -103,6 +108,14 @@
     width: 80vw;
     height: 30vh;
     margin-left: 10vw;
+  }
+
+  .left h4 {
+    font-size: 4vw;
+  }
+  
+  .left h1 {
+    font-size: 5vw;
   }
 }
 

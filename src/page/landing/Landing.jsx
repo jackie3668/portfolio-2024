@@ -6,22 +6,27 @@ import logo from '../../asset/branding/logo.png';
 import About from '../../component/about/About';
 import { animateScroll as scroll } from 'react-scroll';
 import Projects from '../../component/projects/Projects';
+import Contact from '../../component/contact/Contact';
 
 const Landing = () => {
   const heroContainerRef = useRef(null);
   const shadedAreaRef = useRef(null);
   const aboutRef = useRef(null);
+  const projectsRef = useRef(null);
   let lastClickTime = useRef(0);
   const lastScrollPos = useRef(0);
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    const handleClick = () => {
+    const handleClick = (event) => {
       const currentTime = Date.now();
       const timeSinceLastClick = currentTime - lastClickTime.current;
       lastClickTime.current = currentTime;
-
-      if (timeSinceLastClick > 500) { 
+      const clickY = event.clientY;
+      const shadedAreaOffsetTop = heroContainerRef.current.offsetTop;
+      if (timeSinceLastClick > 500 && clickY <= shadedAreaOffsetTop) { 
+        console.log(true);
+        console.log(clickY, shadedAreaOffsetTop);
         const aboutOffsetTop = aboutRef.current.offsetTop;
         scroll.scrollTo(aboutOffsetTop, {
           duration: 300,
@@ -38,18 +43,19 @@ const Landing = () => {
   }, []);
 
     useEffect(() => {
-    const handleClick = () => {
+    const handleClick = (event) => {
       const currentTime = Date.now();
       const timeSinceLastClick = currentTime - lastClickTime.current;
       lastClickTime.current = currentTime;
-
-      if (timeSinceLastClick > 500) { 
+      const clickY = event.clientY;
+      const shadedAreaOffsetTop = shadedAreaRef.current.offsetTop;
+      if (timeSinceLastClick > 500 && clickY <= shadedAreaOffsetTop) { 
         const aboutOffsetTop = aboutRef.current.offsetTop;
         scroll.scrollTo(aboutOffsetTop, {
           duration: 200,
           smooth: true,
         });
-      }
+      } 
     };
 
     window.addEventListener('click', handleClick);
@@ -78,9 +84,14 @@ const Landing = () => {
         const scrollY = window.scrollY;
         const shadedAreaOffsetTop = shadedAreaRef.current.offsetTop;
         const aboutOffsetTop = aboutRef.current.offsetTop;
+        const projectsOffsetTop = projectsRef.current.offsetTop
 
         if (scrollY > lastScrollPos.current && scrollY < shadedAreaOffsetTop) {
-          console.log('Scrolling down above shaded area. Scrolling to about section.');
+          scroll.scrollTo(aboutOffsetTop, {
+            duration: 200,
+            smooth: true,
+          });
+        } else if (scrollY < lastScrollPos.current && scrollY > aboutOffsetTop && scrollY < projectsOffsetTop) {
           scroll.scrollTo(aboutOffsetTop, {
             duration: 200,
             smooth: true,
@@ -129,8 +140,11 @@ const Landing = () => {
       <section ref={aboutRef} className='about-section'>
         <About />
       </section>
-      <section className="projects">
+      <section ref={projectsRef}>
         <Projects />
+      </section>
+      <section>
+        <Contact />
       </section>
     </div>
   );

@@ -147,25 +147,3 @@
     border-top-right-radius: 50px;
   }
 }
-
-.about-container {
-  position: relative;
-}
-
-.projects {
-  height: 60vh;
-}
-
-.custom-cursor {
-  position: fixed;
-  pointer-events: none;
-  transition: transform 0.2s ease-out;
-  transform: translate(-50%, -50%);
-  z-index: 9999; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #000;
-  font-size: 12px;
-  font-weight: bold;
-}

@@ -6,12 +6,14 @@
   justify-content: center;
   align-items: center;
   gap: 10vh;
+  margin-top: 20vh;
 }
 
 .projects-container>h1 {
   font-family: "Rasa", serif;
   font-style: italic;
-  font-size: 3vw;
+  font-weight: 400;
+  font-size: 4vw;
   letter-spacing: 0.5rem;
 }
 
@@ -25,30 +27,31 @@
   white-space: nowrap;
   display: flex;
   flex-direction: column;
-  font-size: 5vh;
+  font-size: 2.25vw;
 }
 
 .titles h1 {
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.4vw;
   z-index: 2;
   opacity: 0.5;
+  transition: all 0.3s ease-in-out;
 }
-.titles h1.active {
+
+.titles h1.active,
+.titles h1:hover {
   opacity: 1;
 }
 
 .display-wrapper {
-  margin-left: -12VW;
+  margin-left: -10vw;
   width: 100%;
 }
 
 .display {
   position: relative;
-  height: 60vh;
-  width: 60vh;
-  border-radius: 1rem;
+  height: 50vh;
+  width: 40vw;
 }
-
 
 .display video {
   opacity: 1;
@@ -60,19 +63,19 @@
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   object-fit: cover;
-  border-radius: 1rem;
   z-index: 1;
 }
 
 .button-wrapper {
   position: absolute;
+  width: 100%;
   left: 50%;
-  bottom: 1rem;
+  bottom: 2vw;
   transform: translateX(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1vw;
   z-index: 3;
 }
 
@@ -82,10 +85,10 @@
   justify-content: space-between;
   align-items: center;
   border: none;
-  width: 13vw;
-  font-size: 1rem;
+  width: 12vw;
+  font-size: 2vh;
   border-radius: 1rem;
-  padding: 0.25rem 1rem;
+  padding:0.5vw 2vw;
 }
 
 .button-wrapper button img {
@@ -115,6 +118,7 @@
   background: black;
   color: white;
   transition: all 0.4s ease-in-out;
+  border: 1px solid white;
 }
 
 .button-wrapper .case-study:hover {
@@ -124,4 +128,213 @@
 
 .button-wrapper .case-study:hover img {
   filter: invert(1);
+}
+
+.projects-container>button {
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid white;
+  width: 20vw;
+  font-size: 3vh;
+  border-radius: 2vw;
+  padding:0.5vw 2vw;
+  transition: all 0.4s ease-in-out;
+}
+
+.projects-container>button img {
+  width: 3vh;
+}
+
+.projects-container>button:hover {
+  background-color: white;
+  color: black;
+}
+
+.projects-container>button:hover img {
+  filter: invert(1);
+}
+
+h1.active {
+  animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch{
+  2%,64%{
+    transform: translate(2px,0) skew(0deg);
+  }
+  4%,60%{
+    transform: translate(-2px,0) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(5deg); 
+  }
+}
+
+h1.active:before,
+h1.active:after{
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+h1.active:before{
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop{
+  2%,64%{
+    transform: translate(2px,-2px);
+  }
+  4%,60%{
+    transform: translate(-2px,2px);
+  }
+  62%{
+    transform: translate(13px,-1px) skew(-13deg); 
+  }
+}
+
+h1.active:after{
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom{
+  2%,64%{
+    transform: translate(-2px,0);
+  }
+  4%,60%{
+    transform: translate(-2px,0);
+  }
+  62%{
+    transform: translate(-22px,5px) skew(21deg); 
+  }
+}
+
+.fade-in {
+	-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Mobile devices (portrait and landscape) */
+@media only screen and (max-width: 767px) {
+  .display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 30vh;
+    width: 30vh;
+    border-radius: 1rem;
+  }
+
+  .display-wrapper {
+    margin: 0;
+  }
+
+  .projects-wrapper {
+    flex-direction: column;
+    gap: 4vh;
+  }
+
+  .titles {
+    width: 100%;
+    font-size: 1.4vh;
+  }
+
+  .button-wrapper button {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13vh;
+    font-size: 1.5vh;
+    border-radius: 2rem;
+    padding:0.75vh 1.75vh;
+  } 
+
+  .button-wrapper button img {
+    display: none;
+  }
+
+  .projects-container>button {
+    width: 45vw;
+    border-radius: 3vh;
+  }
+}
+
+/* Tablet devices (portrait and landscape) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .display {
+    position: relative;
+    height: 50vh;
+    width: 50vw;
+  }
+
+  .display-wrapper {
+    margin-left: -16vw;
+    width: 100%;
+  }
+  
+  .titles {
+    font-size: 3vw;
+  }
+
+  .button-wrapper button {
+    width: 18vw;
+    border-radius: 2vw;
+  } 
+
+  .projects-container>button {
+    width: 30vw;
+    border-radius: 3vh;
+  }
+}
+
+/* Laptop devices (portrait and landscape) */
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .display {
+    position: relative;
+    height: 50vh;
+    width: 45vw;
+  }
+
+  .titles {
+    font-size: 3vw;
+  }
+  
+  .button-wrapper button {
+    width: 14vw;
+    font-size: 1.5vw;
+  } 
+}
+
+/* Desktop devices (portrait and landscape) */
+@media only screen and (min-width: 1441px) {
+
 }

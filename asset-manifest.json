@@ -1,21 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio-2024/static/css/main.ba29da41.css",
-    "main.js": "/portfolio-2024/static/js/main.45dcf7a8.js",
+    "main.css": "/portfolio-2024/static/css/main.89799d75.css",
+    "main.js": "/portfolio-2024/static/js/main.a3d1828e.js",
+    "static/media/Fresh Mint.mp4": "/portfolio-2024/static/media/Fresh Mint.ba0b6f928bd179c890fc.mp4",
+    "static/media/Mentor A Promise.mp4": "/portfolio-2024/static/media/Mentor A Promise.f88369e337d1510a163e.mp4",
     "static/media/9150545-hd_1920_1080_24fps.mp4": "/portfolio-2024/static/media/9150545-hd_1920_1080_24fps.b674089417293949cb2b.mp4",
     "static/media/4779866-hd_1920_1080_30fps.mp4": "/portfolio-2024/static/media/4779866-hd_1920_1080_30fps.9d01c8b0d91cec00a23e.mp4",
-    "static/media/test.mp4": "/portfolio-2024/static/media/test.c61aeaf8ad13ecaab71a.mp4",
-    "static/media/Glimmering Grove.mp4": "/portfolio-2024/static/media/Glimmering Grove.55ab6b60fec5ae38d2ed.mp4",
+    "static/media/Stardust.mp4": "/portfolio-2024/static/media/Stardust.3a8c4d09d144b0155a74.mp4",
+    "static/media/Celestial Tarot.mp4": "/portfolio-2024/static/media/Celestial Tarot.930c1e16623504cd087d.mp4",
+    "static/media/Glimmering Grove.mp4": "/portfolio-2024/static/media/Glimmering Grove.34b29e948c03521301e9.mp4",
     "static/media/pexels-adrien-olichon-1257089-2387533.jpg": "/portfolio-2024/static/media/pexels-adrien-olichon-1257089-2387533.96f8628cafd46ffcb1f8.jpg",
     "static/media/pexels-slendyalex-3648850.jpg": "/portfolio-2024/static/media/pexels-slendyalex-3648850.f32fe3b576e9c499297e.jpg",
     "static/media/pexels-matej-117839-1158394.jpg": "/portfolio-2024/static/media/pexels-matej-117839-1158394.8aead930ac3ba393c2e0.jpg",
     "static/media/logo.png": "/portfolio-2024/static/media/logo.6de8c6f882149a91638e.png",
     "index.html": "/portfolio-2024/index.html",
-    "main.ba29da41.css.map": "/portfolio-2024/static/css/main.ba29da41.css.map",
-    "main.45dcf7a8.js.map": "/portfolio-2024/static/js/main.45dcf7a8.js.map"
+    "main.89799d75.css.map": "/portfolio-2024/static/css/main.89799d75.css.map",
+    "main.a3d1828e.js.map": "/portfolio-2024/static/js/main.a3d1828e.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba29da41.css",
-    "static/js/main.45dcf7a8.js"
+    "static/css/main.89799d75.css",
+    "static/js/main.a3d1828e.js"
   ]
 }

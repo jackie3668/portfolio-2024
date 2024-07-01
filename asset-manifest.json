@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-2024/static/css/main.40775ea8.css",
-    "main.js": "/portfolio-2024/static/js/main.b7f71d43.js",
+    "main.css": "/portfolio-2024/static/css/main.2f3c9688.css",
+    "main.js": "/portfolio-2024/static/js/main.eabba0c3.js",
     "static/media/Fresh Mint.mp4": "/portfolio-2024/static/media/Fresh Mint.ba0b6f928bd179c890fc.mp4",
     "static/media/Mentor A Promise.mp4": "/portfolio-2024/static/media/Mentor A Promise.f88369e337d1510a163e.mp4",
     "static/media/9150545-hd_1920_1080_24fps.mp4": "/portfolio-2024/static/media/9150545-hd_1920_1080_24fps.b674089417293949cb2b.mp4",
@@ -14,11 +14,11 @@
     "static/media/pexels-matej-117839-1158394.jpg": "/portfolio-2024/static/media/pexels-matej-117839-1158394.8aead930ac3ba393c2e0.jpg",
     "static/media/logo.png": "/portfolio-2024/static/media/logo.6de8c6f882149a91638e.png",
     "index.html": "/portfolio-2024/index.html",
-    "main.40775ea8.css.map": "/portfolio-2024/static/css/main.40775ea8.css.map",
-    "main.b7f71d43.js.map": "/portfolio-2024/static/js/main.b7f71d43.js.map"
+    "main.2f3c9688.css.map": "/portfolio-2024/static/css/main.2f3c9688.css.map",
+    "main.eabba0c3.js.map": "/portfolio-2024/static/js/main.eabba0c3.js.map"
   },
   "entrypoints": [
-    "static/css/main.40775ea8.css",
-    "static/js/main.b7f71d43.js"
+    "static/css/main.2f3c9688.css",
+    "static/js/main.eabba0c3.js"
   ]
 }

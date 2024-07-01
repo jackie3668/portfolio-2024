@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio-2024/static/css/main.04fd005d.css",
-    "main.js": "/portfolio-2024/static/js/main.53e504a9.js",
+    "main.css": "/portfolio-2024/static/css/main.ba29da41.css",
+    "main.js": "/portfolio-2024/static/js/main.45dcf7a8.js",
     "static/media/9150545-hd_1920_1080_24fps.mp4": "/portfolio-2024/static/media/9150545-hd_1920_1080_24fps.b674089417293949cb2b.mp4",
     "static/media/4779866-hd_1920_1080_30fps.mp4": "/portfolio-2024/static/media/4779866-hd_1920_1080_30fps.9d01c8b0d91cec00a23e.mp4",
     "static/media/test.mp4": "/portfolio-2024/static/media/test.c61aeaf8ad13ecaab71a.mp4",
+    "static/media/Glimmering Grove.mp4": "/portfolio-2024/static/media/Glimmering Grove.55ab6b60fec5ae38d2ed.mp4",
     "static/media/pexels-adrien-olichon-1257089-2387533.jpg": "/portfolio-2024/static/media/pexels-adrien-olichon-1257089-2387533.96f8628cafd46ffcb1f8.jpg",
     "static/media/pexels-slendyalex-3648850.jpg": "/portfolio-2024/static/media/pexels-slendyalex-3648850.f32fe3b576e9c499297e.jpg",
     "static/media/pexels-matej-117839-1158394.jpg": "/portfolio-2024/static/media/pexels-matej-117839-1158394.8aead930ac3ba393c2e0.jpg",
     "static/media/logo.png": "/portfolio-2024/static/media/logo.6de8c6f882149a91638e.png",
     "index.html": "/portfolio-2024/index.html",
-    "main.04fd005d.css.map": "/portfolio-2024/static/css/main.04fd005d.css.map",
-    "main.53e504a9.js.map": "/portfolio-2024/static/js/main.53e504a9.js.map"
+    "main.ba29da41.css.map": "/portfolio-2024/static/css/main.ba29da41.css.map",
+    "main.45dcf7a8.js.map": "/portfolio-2024/static/js/main.45dcf7a8.js.map"
   },
   "entrypoints": [
-    "static/css/main.04fd005d.css",
-    "static/js/main.53e504a9.js"
+    "static/css/main.ba29da41.css",
+    "static/js/main.45dcf7a8.js"
   ]
 }

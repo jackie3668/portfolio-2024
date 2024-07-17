@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './Projects.css';
 import arrow from '../../asset/ui/Up Left.png';
-import video1 from '../../asset/projects/videos/Glimmering Grove.mp4';
-import video2 from '../../asset/projects/videos/Fresh Mint.mp4';
-import video3 from '../../asset/projects/videos/Celestial Tarot.mp4';
+import video1 from '../../asset/projects/videos/Celestial Tarot 2.0.mp4'
+import video2 from '../../asset/projects/videos/Glimmering Grove.mp4';
+import video3 from '../../asset/projects/videos/Fresh Mint.mp4';
 import video4 from '../../asset/projects/videos/Mentor A Promise.mp4';
 import video5 from '../../asset/projects/videos/Stardust.mp4';
 
@@ -13,9 +13,9 @@ const Projects = () => {
   const videos = [video1, video2, video3, video4, video5];
 
   const websites = [
+    'https://jackie3668.github.io/celestial-tarot-2.0/',
     'https://jackie3668.github.io/glimmering-grove/',
     'https://jackie3668.github.io/fresh-mint/',
-    'https://jackie3668.github.io/celestial-tarot/',
     'https://mentorapromise.org/',
     'https://jackie3668.github.io/stardust/'
   ];
@@ -58,9 +58,9 @@ const Projects = () => {
       <h1>Selected Work</h1>
       <div className="projects-wrapper">
         <div className="titles">
-          <h1 onClick={handleClick} className='active' id='0' title='GLIMMERING GLOVE'>GLIMMERING GLOVE</h1>
-          <h1 onClick={handleClick} id='1' title='FRESH MINT'>FRESH MINT</h1>
-          <h1 onClick={handleClick} id='2' title='CELESTIAL TAROT'>CELESTIAL TAROT</h1>
+          <h1 onClick={handleClick} className='active' id='0' title='CELESTIAL TAROT'>CELESTIAL TAROT</h1>
+          <h1 onClick={handleClick} id='1' title='GLIMMERING GROVE'>GLIMMERING GROVE</h1>
+          <h1 onClick={handleClick} id='2' title='FRESH MINT'>FRESH MINT</h1>
           <h1 onClick={handleClick} id='3' title='MENTOR A PROMISE'>MENTOR A PROMISE</h1>
           <h1 onClick={handleClick} id='4' title='STARDUST'>STARDUST</h1>        
         </div>

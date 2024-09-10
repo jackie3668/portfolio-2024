@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-2024/static/css/main.92d66784.css",
+    "main.css": "/portfolio-2024/static/css/main.34421d1b.css",
     "main.js": "/portfolio-2024/static/js/main.399386b5.js",
     "static/media/Celestial Tarot 2.0.mp4": "/portfolio-2024/static/media/Celestial Tarot 2.0.e9799d446519fd4eb616.mp4",
     "static/media/Fresh Mint.mp4": "/portfolio-2024/static/media/Fresh Mint.ba0b6f928bd179c890fc.mp4",
@@ -14,11 +14,11 @@
     "static/media/pexels-matej-117839-1158394.jpg": "/portfolio-2024/static/media/pexels-matej-117839-1158394.8aead930ac3ba393c2e0.jpg",
     "static/media/logo.png": "/portfolio-2024/static/media/logo.6de8c6f882149a91638e.png",
     "index.html": "/portfolio-2024/index.html",
-    "main.92d66784.css.map": "/portfolio-2024/static/css/main.92d66784.css.map",
+    "main.34421d1b.css.map": "/portfolio-2024/static/css/main.34421d1b.css.map",
     "main.399386b5.js.map": "/portfolio-2024/static/js/main.399386b5.js.map"
   },
   "entrypoints": [
-    "static/css/main.92d66784.css",
+    "static/css/main.34421d1b.css",
     "static/js/main.399386b5.js"
   ]
 }

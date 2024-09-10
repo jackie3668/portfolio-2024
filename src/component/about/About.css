@@ -78,6 +78,12 @@
   display: none;
 }
 
+.scroll-down {
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg)
+}
 /* Mobile devices (portrait and landscape) */
 @media only screen and (max-width: 767px) {
   .desktop {

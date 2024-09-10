@@ -20,7 +20,7 @@ function App() {
     <BrowserRouter basename="/portfolio-2024">
       <ParallaxProvider>
         <div className="app">
-          <Navbar />
+          {/* <Navbar /> */}
           <AnimatedCursor
             innerSize={8}
             outerSize={12}

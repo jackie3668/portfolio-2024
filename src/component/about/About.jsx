@@ -4,7 +4,7 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import image1 from '../../asset/images/pexels-adrien-olichon-1257089-2387533.jpg'
 import image2 from '../../asset/images/pexels-matej-117839-1158394.jpg'
 import image3 from '../../asset/images/pexels-slendyalex-3648850.jpg'
-import scroll from '../../asset/ui/arrow-right.png'
+// import scroll from '../../asset/ui/arrow-right.png'
 
 const About = () => {
 

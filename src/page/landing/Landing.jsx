@@ -11,6 +11,7 @@ import Contact from '../../component/contact/Contact';
 const Landing = () => {
   const heroContainerRef = useRef(null);
   const shadedAreaRef = useRef(null);
+  const shadedAreaTwoRef = useRef(null);
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
   let lastClickTime = useRef(0);
@@ -83,16 +84,22 @@ const Landing = () => {
       handleScroll.timeout = setTimeout(() => {
         const scrollY = window.scrollY;
         const shadedAreaOffsetTop = shadedAreaRef.current.offsetTop;
+        const shadedAreaTwoOffsetTop = shadedAreaTwoRef.current.offsetTop;
         const aboutOffsetTop = aboutRef.current.offsetTop;
         const projectsOffsetTop = projectsRef.current.offsetTop
 
-        if (scrollY > lastScrollPos.current && scrollY < shadedAreaOffsetTop) {
+        if (scrollY > lastScrollPos.current && scrollY < shadedAreaOffsetTop) {  
           scroll.scrollTo(aboutOffsetTop, {
             duration: 200,
             smooth: true,
           });
         } else if (scrollY < lastScrollPos.current && scrollY > aboutOffsetTop && scrollY < projectsOffsetTop) {
           scroll.scrollTo(aboutOffsetTop, {
+            duration: 200,
+            smooth: true,
+          });
+        } else if (scrollY > lastScrollPos.current && scrollY < shadedAreaTwoOffsetTop && scrollY > aboutOffsetTop) {
+          scroll.scrollTo(projectsOffsetTop, {
             duration: 200,
             smooth: true,
           });
@@ -140,6 +147,7 @@ const Landing = () => {
       <section ref={aboutRef} className='about-section'>
         <About />
       </section>
+      <div className="shaded-area" ref={shadedAreaTwoRef}></div>
       <section ref={projectsRef}>
         <Projects />
       </section>

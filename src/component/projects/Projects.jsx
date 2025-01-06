@@ -80,12 +80,6 @@ const Projects = () => {
                   <img src={arrow} alt="" />
                 </button>
               </a>
-              {/* <a href={websites[projectIndex]} target="_blank" rel="noopener noreferrer" className="website">
-                <button className="case-study">
-                  Case Study
-                  <img src={arrow} alt="" />
-                </button>
-              </a> */}
             </div>
           </div>
         </div>

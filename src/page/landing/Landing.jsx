@@ -125,7 +125,7 @@ const Landing = () => {
             <span>
               I am
             </span>
-            JACKIE SHEN
+            JACKIE
           </h1>
         </Parallax>
         <Parallax translateX={['0px', '300px']} speed={-30} className='line-2'>

@@ -17,7 +17,7 @@ function App() {
   },[])
 
   return (
-    <BrowserRouter basename="/portfolio-2024">
+    <BrowserRouter basename="/">
       <ParallaxProvider>
         <div className="app">
           {/* <Navbar /> */}
